@@ -117,7 +117,7 @@ async def websocket_endpoint(websocket: WebSocket):
                     "Welcome !!! Please choose one of the following options:\n"
                     "1. Talk to a character\n"
                     "2. Learn about a topic in history\n"
-                    "3. Fun facts on history\n"
+                    "3. Fun facts on history\n\n"
                 )
                 await websocket.send_text(json.dumps({"delta": welcome_message}))
                 is_welcomed = True
