@@ -17,7 +17,7 @@ app = FastAPI()
 # Add CORS middleware with updated allow_origins
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://e3-ai.vercel.app"],  # Only allow this specific origin
+    allow_origins=["https://chatwith-q7p7i6q1u-manu839s-projects.vercel.app/"],  # Only allow this specific origin
     allow_credentials=True,
     allow_methods=["*"],  # Allows all methods
     allow_headers=["*"],  # Allows all headers
