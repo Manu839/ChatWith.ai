@@ -25,7 +25,7 @@ socket.onclose = function (event) {
   } else {
     console.log("[close] Connection died");
   }
-  chatResponse.innerText += "Disconnected from the chatbot.\n";
+  chatResponse.innerText += "\nDisconnected from the chatbot.\n";
 };
 
 socket.onerror = function (error) {
@@ -37,11 +37,11 @@ chatForm.addEventListener("submit", function (e) {
   e.preventDefault();
   if (socket.readyState === WebSocket.OPEN) {
     socket.send(JSON.stringify({ message: userInput.value }));
-    chatResponse.innerText += `You: ${userInput.value}\n`;
+    chatResponse.innerText += `\nYou: ${userInput.value}\n`;
     userInput.value = "";
   } else {
     chatResponse.innerText +=
-      "Connection is not open. Please try again later.\n";
+      "\nConnection is not open. Please try again later.\n";
   }
 });
 
