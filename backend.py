@@ -114,7 +114,7 @@ async def websocket_endpoint(websocket: WebSocket):
             
             if not is_welcomed:
                 welcome_message = (
-                    "Welcome !!! Please choose one of the following options:\n"
+                    "Welcome !! Please choose one of the following options:\n"
                     "1. Talk to a character\n"
                     "2. Learn about a topic in history\n"
                     "3. Fun facts on history\n\n"
